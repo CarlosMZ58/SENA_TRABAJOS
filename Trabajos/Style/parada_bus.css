@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+Body{
+    margin: 0;
+    display: grid;
+    width: 100% ;
+    height: 100vh;
+    grid-template-rows: repeat(3, 33%);
+    overflow-x: hidden;
+
+    #vertical1{
+        width: 100%;
+        height: 100%;
+    }
+
+    #vertical2{
+        height: 100%;
+        display: flex;
+        background-color: aquamarine;
+        background-image: url(../../Img/Carretera.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        
+        img{
+            width: 230px;
+            height:230px;
+            translate: 0 -65px;
+        }
+    }
+
+    #vertical3{
+        width: 86%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(5, 20%);
+        justify-items: center;
+        align-items: center;
+        background-image: url(../../Img/Anden.webp);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
